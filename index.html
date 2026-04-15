@@ -37,6 +37,21 @@
             font-size: 24px;
             cursor: pointer;
         }
+        @media (max-width: 600px) { 
+#menuToggle { 
+display: block; 
+} 
+#menuItems { 
+display: none; 
+width: 100%; 
+text-align: center; 
+} 
+flex-direction: column; 
+nav ul { 
+} 
+} 
+nav ul li { 
+margin-top: 10px; 
     </style>
 </head>
 <body>
@@ -51,5 +66,21 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+
+    <script>
+        function toggleMenu() { 
+var menu = document.getElementById("menuItems"); 
+if (menu.style.display === "block") { 
+menu.style.display 
+} else { 
+= 
+"none"; 
+menu.style.display 
+= 
+"block"; 
+} 
+} 
+
+    </script>
 </body>
 </html>
